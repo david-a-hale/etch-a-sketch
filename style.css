@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    background-color: rgb(223, 18, 18);
+    border-radius: 25px;
+    margin: 100px;
 }
 
 .grid-container {
     width: 500px;
     height: 500px;
     display: grid;
+    border: 1px solid black;
+    margin: 0 20px 20px 20px;
 }
