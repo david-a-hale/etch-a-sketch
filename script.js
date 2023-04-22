@@ -21,9 +21,10 @@ populateGrid(16);
 
 function changeSize(input) {
     if (input >= 2 && input <= 100) {
+        document.querySelector('.error').style.display = 'none';
         populateGrid(input);
     } else {
-        console.log('Error: input must be between 2 and 100');
+        document.querySelector('.error').style.display = 'flex';
     };
 };
 
