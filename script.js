@@ -51,4 +51,9 @@ function resetGrid() {
 
 document.querySelector("body").addEventListener("click", () => {
     click = !click;
+    if (click) {
+        document.querySelector('.mode').textContent = "Coloring: On";
+    } else {
+        document.querySelector('.mode').textContent = "Coloring: Off";
+    };
 });
