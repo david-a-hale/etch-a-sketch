@@ -49,11 +49,13 @@ function resetGrid() {
     squares.forEach((div) => div.style.backgroundColor = 'white');
 };
 
-document.querySelector("body").addEventListener("click", () => {
-    click = !click;
-    if (click) {
-        document.querySelector('.mode').textContent = "Coloring: On";
-    } else {
-        document.querySelector('.mode').textContent = "Coloring: Off";
+document.querySelector("body").addEventListener("click", (e) => {
+    if (e.target.tagName != 'BUTTON') {
+        click = !click;
+        if (click) {
+            document.querySelector('.mode').textContent = "Coloring: On";
+        } else {
+            document.querySelector('.mode').textContent = "Coloring: Off";
+        };
     };
 });
