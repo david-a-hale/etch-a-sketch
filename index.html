@@ -16,14 +16,14 @@
             <div class="grid-container"></div>
         </div>
         <div class="button-container">
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('random')">Random</button>
-            <button onclick="changeColor('white')">Eraser</button>
-            <button onclick="resetGrid()">Reset</button>
+            <button class="black" onclick="changeColor('black')">Black</button>
+            <button class="random" onclick="changeColor('random')">Random</button>
+            <button class="white" onclick="changeColor('white')">Eraser</button>
+            <button class="reset" onclick="resetGrid()">Reset</button>
         </div>
         <div>
-            <input type="text" placeholder="Board size" value="16" onchange="changeSize(this.value)">
-            <button>Set Size</button>
+            <input class="txt-box" type="text" placeholder="Board size" value="16" onchange="changeSize(this.value)">
+            <button class="size-btn">Set Size</button>
         </div>
         <div class="error">Input must be between 2 and 100</div>
     </div>
